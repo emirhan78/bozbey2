@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOZBEY Yer Kontrol İstasyonu — Tanıtım</title>
+  <link rel="preload" href="../DejaVuSans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="BOZBEY Yer Kontrol İstasyonu: Çoklu otonom İHA takibi, görev planlama, raporlama ve Telegram entegrasyonu ile modern yer kontrol yazılımı.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="../logo.png" alt="BOZBEY Logo" class="brand-logo">
+        <span class="brand-name">BOZBEY Yer Kontrol İstasyonu</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#ozellikler">Özellikler</a>
+        <a href="#giris-ekrani">Giriş Ekranı</a>
+        <a href="#arayuz">Kontrol Arayüzü</a>
+        <a href="#kurulum">Kurulum</a>
+        <a href="#kurucumuz">Gâzi Paşa</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Modern, hızlı ve güvenilir yer kontrol arayüzü</h1>
+          <p>Gerçek zamanlı harita, görev planlama, raporlama ve Telegram bildirimleriyle çoklu otonom İHA yönetimi.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#kurulum">Hızlı Başlangıç</a>
+            <a class="btn" href="#ozellikler">Özellikleri Keşfet</a>
+          </div>
+        </div>
+                  <div class="hero-visual">
+            <div class="device-frame">
+              <img src="../dashboard.png" alt="Drone İkonu" class="device-shot">
+            </div>
+            <div class="caption">Arayüzden temsili görünüm</div>
+          </div>
+      </div>
+    </section>
+
+    <section id="ozellikler" class="section">
+      <div class="container">
+        <h2>Öne çıkan özellikler</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>Gerçek Zamanlı Harita</h3>
+            <p>Folium tabanlı harita ile konum takibi, rota ve marker güncellemeleri.</p>
+          </article>
+          <article class="feature">
+            <h3> Anlık Uçuş Bildirimi </h3>
+            <p>Anlık Gelen Uçuş Bildirimi, Konum Alındı, Drone Kalkış Yaptı.</p>
+          </article>
+          <article class="feature">
+            <h3>Raporlama</h3>
+            <p>Uçuş özetleri, JSON/PDF oluşturma ve geçmişe yönelik kayıt tutma.</p>
+          </article>
+          <article class="feature">
+            <h3>Telegram Bildirimleri</h3>
+            <p>Uçuş raporlarını otomatik olarak Telegram botu üzerinden iletme.</p>
+          </article>
+          <article class="feature">
+            <h3>Çoklu İHA Görünümü</h3>
+            <p>Birden fazla İHA'nın durumunu aynı ekranda düzenli biçimde izleme.</p>
+          </article>
+          <article class="feature">
+            <h3>Motor ve Telemetri</h3>
+            <p>Motor güçleri, hız, irtifa ve bağlantı gibi kritik telemetri değerleri.</p>
+          </article>
+          <article class="feature">
+            <h3>Hata/Uyarı Panelleri</h3>
+            <p>Anlık hata mesajları ve kullanıcı dostu geri bildirim diyalogları.</p>
+          </article>
+          <article class="feature">
+            <h3>Güvenli Modlar</h3>
+            <p>Manuel kontrol, güvenli mod ve eve dönüş senaryoları için hazır aksiyonlar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Giriş ekranını PNG olarak göster -->
+    <section id="giris-ekrani" class="section alt">
+      <div class="container">
+        <h2>Giriş Ekranı</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="device-frame large">
+              <img src="login.png" alt="Giriş Ekranı" class="device-shot">
+            </div>
+            <figcaption>Giriş ekranı</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arayüz ekranını PNG olarak göster -->
+    <section id="arayuz" class="section">
+      <div class="container">
+        <h2>Drone Kontrol Arayüzü</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <div class="device-frame large">
+              <img src="dashboard.png" alt="Kontrol Arayüzü" class="device-shot">
+            </div>
+            <figcaption>Çoklu otonom İHA arayüzü</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="kurulum" class="section">
+      <div class="container">
+        <h2>Kurulum ve kullanım</h2>
+        <ol class="steps">
+          <li>Bilgisayarınızda Python ve bağımlılıkların kurulu olduğundan emin olun.</li>
+          <li>Proje klasörüne gidin ve bağımlılıkları yükleyin.</li>
+          <li>Uygulamayı başlatın ve arayüzü kullanmaya başlayın.</li>
+        </ol>
+        <div class="code">
+          <pre>
+cd bozbey
+pip install -r requirements.txt
+python main.py
+          </pre>
+        </div>
+        <p class="note">Not: Harita, raporlama ve bildirim özelliklerinin çalışması için ilgili anahtar/dosya yapılandırmalarının (
+          <code>google-services.json</code>, <code>ServiceAccountKey.json</code> vb.) doğru konumda olması gerekir.</p>
+      </div>
+    </section>
+
+    <section id="kurucumuz" class="section alt">
+      <div class="container">
+        <h2>Gâzi Paşa</h2>
+        <div class="ataturk-monument">
+          <div class="monument-base">
+            <div class="ataturk-portrait">
+              <img src="atatürk.png" alt="Mustafa Kemal Atatürk" class="ataturk-image">
+            </div>
+            <div class="monument-pedestal">
+              <div class="quote-container">
+                <blockquote class="ataturk-quote">
+                  "İstikbal göklerdedir. Göklerini koruyamayan uluslar, yarınlarından asla emin olamazlar."
+                </blockquote>
+                <cite class="quote-author">— Mustafa Kemal Atatürk</cite>
+              </div>
+            </div>
+          </div>
+          <div class="monument-decoration">
+            <div class="laurel-wreath left"></div>
+            <div class="laurel-wreath right"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="section alt">
+      <div class="container contact">
+        <h2>İletişim</h2>
+        <p>Projeyle ilgili geri bildirimleriniz ve katkılarınız için <a href="https://altbozbey.com.tr/" target="_blank" rel="noopener noreferrer">www.altbozbey.com</a> adresini ziyaret edebilirsiniz.</p>
+        <a class="btn" href="../" title="Proje kök dizini">Proje Klasörüne Git</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="yil">2025</span> ALT-BOZBEY </span>
+      <span class="sep">•</span>
+      <span>Teknofest Liseler arası İHA Yarışması 2025 İçin Geliştirilmiştir</span>
+    </div>
+  </footer>
+</body>
+</html>
+
+
